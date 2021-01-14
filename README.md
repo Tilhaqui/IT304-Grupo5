@@ -1,3 +1,5 @@
+![alt text](https://github.com/LuisHTB/IT304-Grupo5/imagens/blob/main/Prediction-_DemandaRegFP.png?raw=true)
+
 # IT304-Grupo5
 Repositório contendo o Projeto Final da disciplina - UFRJ/CT
 
