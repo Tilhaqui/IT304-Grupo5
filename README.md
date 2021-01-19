@@ -31,22 +31,17 @@ Para conseguir prever a demanda de um mês futuro a partir dos dados disponívei
 # Business Understanding
 ## Principais Considerações para a Migração para ACL
 
-
-
 * **Definição dos objetivos:** O objetivo do presente trabalho é investigar a viabilidade da migração do CT/UFRJ para o Ambiente Livre de Contratação.
 
-* **Declaração do problema:** Para todas as análises foram utilizadas as faturas mensais para os anos de 2017, 2018 e 2019. Estas faturas foram digitalizadas e estão disponíveis (). Dessa forma, são esperados um total de 12 dados para cada categoria presente nas faturas. Como nem todas as faturas trazem dados de todas as categorias estudadas, como por exemplo as Tarifas de Ultrapassagem que são cobradas somente nos meses em que há ultrapassagem acima de 5% da demanda contratada.
+* **Declaração do problema:** Tratar os dados disóníveis das faturas e realizar a previsão da demanda.
+
+* **Perguntas de Interesse:** É possível prever, com boa precisão, a demanda que será necessária em meses futuros?
+
+# Data Understanding
+Para todas as análises foram utilizadas as faturas mensais para os anos de 2017, 2018 e 2019. Estas faturas foram digitalizadas e estão disponíveis  em **data/Contas de energia UFRJ.xlsx.** Dessa forma, são esperados um total de 12 dados para cada categoria presente nas faturas. Como nem todas as faturas trazem dados de todas as categorias estudadas, como por exemplo as Tarifas de Ultrapassagem que são cobradas somente nos meses em que há ultrapassagem acima de 5% da demanda contratada.
 Neste estudo, as categorias ENERGIA HFP VERDE, ENERGIA HP VERDE, ENERGIA HFP AMAR, ENERGIA HP AMAR, ENERGIA HFP VERM e ENERGIA HP VERM estão presentes apenas nas faturas referentes aos meses em que as bandeiras tarifárias estão sendo aplicadas. Dessa forma, nos meses em que não há bandeira tarifária aplicada não há energia consumida sob uma dada bandeira e, consequentemente, não há acréscimos na fatura por conta de bandeiras tarifárias, e, portanto, as categorias Acrescimo Bamar, Acrescimo Bverm1 e Acrescimo Bverm2 não constarão nas faturas. Contudo, mesmo que nenhuma bandeira esteja aplicada as tarifas relacionadas a cada uma das bandeiras estão presentes em todos os meses (Esta análise é mais detalhada no estudo preliminar).
 
-* **Perguntas de Interesse:**
-Há dados faltantes?
-
-Qualidade dos Dados
-
- Ainda:
- 
-EL objetivo de este trabajo es usar base de datos obtenidos de las factura para estimar las demandas de nuestra unidad consumidora.
-
+# Data Preparation
 
 A partir de los datos 2017-2019 que tenemos disponibles, las facturas fueron disponibles pudiendose observado en la tabla X. Sin embargo, en la tabla existe datos no especificados NoN. Ese datos no es legible para nuestra herramienta de trabajo Python. Este tuvo que ser sustituido por un valor cero. Aquellos datos nulos pueden ser presentados en la figura X y Y. 
 
