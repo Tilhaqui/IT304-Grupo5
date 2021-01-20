@@ -65,4 +65,4 @@ Buscando um banco de dados uniforme e melhor condicionado, pode-se empregar algu
 
 Outro aspecto importante é a identificação de dados com comportamento atípico, chamados outliers. Uma forma simples de identificação de outliers são os chamados Box Plot, que mostram a média do valor apresentado juntamente com a margem de erro estipulada. Qualquer valor fora dessa margem de ero é chamado de outlier. Abaixo são apresentados os Box Plot de todas as variáveis estudadas
 
-![alt text](imagens/BoxBlot_-_Before.png)
+![alt text](imagens/BoxPlot_-_Before.png)
