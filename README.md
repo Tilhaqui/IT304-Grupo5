@@ -63,4 +63,4 @@ Buscando um banco de dados uniforme e melhor condicionado, pode-se empregar algu
 
 ![alt text](imagens/Period_-_Imputation.png)
 
-asd
+as
