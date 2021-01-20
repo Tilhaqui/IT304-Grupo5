@@ -87,7 +87,9 @@ Uma vez que os dados foram devidamente tratados é necessária realizar a modela
 
 # Evaluation
 
-Aplicando a modelagem Arima sobre esta variável obtém-se o resultado mostrado abaixo. Pode-se observar que o modelo obtido se ajusta aos dados dentro de uma margem de erro, o que mostra que é de fato possível utilizar o Arima para prever a demanda da UC estudada. Deve-se estipular uma margem de erro adequada para realizar contratações acertivas, evitando contratar menos do que o necessário, o que pode resultar em falta de abasteceimento. No mercado de energia, o excedente não é tão problemático pois pode ser revendido ao preço do PLH(PRECISA REVER ESSA SIGLA - NÃO SEI QUAL É O CERTO KKKK.)
+Aplicando a modelagem Arima sobre esta variável obtém-se o resultado mostrado abaixo. Pode-se observar que o modelo obtido se ajusta aos dados dentro de uma margem de erro, o que mostra que é de fato possível utilizar o Arima para prever a demanda da UC estudada. Deve-se estipular uma margem de erro adequada para realizar contratações acertivas, evitando contratar menos do que o necessário, o que pode resultar em falta de abasteceimento. No mercado de energia, o excedente não é tão problemático pois pode ser revendido ao preço do PLD.
+
+![alt text](imagens/Prediction_-_DemandaRegFP.png)
 
 # Deploiment
 
