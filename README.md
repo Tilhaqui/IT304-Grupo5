@@ -63,6 +63,17 @@ Buscando um banco de dados uniforme e melhor condicionado, pode-se empregar algu
 
 ![alt text](imagens/Period_-_Imputation.png)
 
-Outro aspecto importante é a identificação de dados com comportamento atípico, chamados outliers. Uma forma simples de identificação de outliers são os chamados Box Plot, que mostram a média do valor apresentado juntamente com a margem de erro estipulada. Qualquer valor fora dessa margem de ero é chamado de outlier. Abaixo são apresentados os Box Plot de todas as variáveis estudadas
+Após a remoção dos dados nulos o banco de dados fica completo, como pode ser observado a partir da matriz de dados abaixo.
+
+![alt text](imagens/MissingDataMatrix_-_After.png)
+
+
+Outro aspecto importante é a identificação de dados com comportamento atípico, chamados outliers, que podem  ser observados nos dados. Por exemplo, o pico presente na variável REAT_KVAR_PONTA distoa muito do restante dos dados, possivelmente devido a um erro de digitalização. Uma forma simples de identificação de outliers são os chamados Box Plot, que mostram a média do valor apresentado juntamente com a margem de erro estipulada. Qualquer valor fora dessa margem de ero é chamado de outlier. Abaixo são apresentados os Box Plot de todas as variáveis estudadas
 
 ![alt text](imagens/BoxPlot_-_Before.png)
+
+Uma vez identificados os outliers é necessários removê-los e completar o espaço deixado com alguma técnica. Neste trabalho optou-se arbitrariamente por utilizar a técnica interquartile Range para remover e subtituir os outliers. Após a substituição destes dados as variáveis podem ser observadas abaixo. É também mostrado o Box Plot após a remoção dos outliers. Alguns campos como PIS/PASEP e COFINS foram verificados nas leis e estão corretos, apesar de serem identificados pelo Box Plot ocmo outliers. Portanto, nenhuma alteração foi realizada sobre estes valores.
+
+![alt text](imagens/DataFrameColumns_-_After.png)
+
+![alt text](imagens/BoxPlot_-_Outliers.png)
