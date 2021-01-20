@@ -42,6 +42,18 @@ Para todas as análises foram utilizadas as faturas mensais para os anos de 2017
 Neste estudo, as categorias ENERGIA HFP VERDE, ENERGIA HP VERDE, ENERGIA HFP AMAR, ENERGIA HP AMAR, ENERGIA HFP VERM e ENERGIA HP VERM estão presentes apenas nas faturas referentes aos meses em que as bandeiras tarifárias estão sendo aplicadas. Dessa forma, nos meses em que não há bandeira tarifária aplicada não há energia consumida sob uma dada bandeira e, consequentemente, não há acréscimos na fatura por conta de bandeiras tarifárias, e, portanto, as categorias Acrescimo Bamar, Acrescimo Bverm1 e Acrescimo Bverm2 não constarão nas faturas. Contudo, mesmo que nenhuma bandeira esteja aplicada as tarifas relacionadas a cada uma das bandeiras estão presentes em todos os meses (Esta análise é mais detalhada no estudo preliminar).
 
 # Data Preparation
+As faturas de energia elétrica disponíveis foram digitalizadas em uma planilha eletrônica, cujos campos são mostrados abaixo.
+
+![alt text](imagens/MissingDataBarPlot-_Before.png)
+
+Como têm-se dados dos anos de 2017, 2018 e 2019 espera-se que cada campo tenha um total de 36 valores. Pode ser observado que isso não é verdade para todos os campos disponíveis. Para se ter uma melhor noção dos dados faltantes é mostrado abaixo uma matriz de dados faltantes abxio, de onde pode ser observado que se há algum padrão ou algum tip ode correlção entre as variáveis faltantas.
+
+![alt text](imagens/MissingDataMatrix-_Before.png)
+
+Pode ser observado que o campo ICMS não possui nenhum dado, o que é esperado pois a UC estudada é isenta de pagar tal imposto. Os campos relacionados a bandeiras tarifárias apresentam elevado número de dados faltantes e isso pdoe ser justificado devido à natureza da aplicação das bandeiras tarifária. Além disso, não há correlação entre as bandeiras tarifárias pois essas se excluem mutuamente, isto é, apenas uma bandeira tarifária pode ser aplicada sobre o consumo por vez. Os demais campos não possuem dados pois estes dados não estão disponíveis nas faturas. 
+
+
+A partir dos dados disponíveis
 
 A partir de los datos 2017-2019 que tenemos disponibles, las facturas fueron disponibles pudiendose observado en la tabla X. Sin embargo, en la tabla existe datos no especificados NoN. Ese datos no es legible para nuestra herramienta de trabajo Python. Este tuvo que ser sustituido por un valor cero. Aquellos datos nulos pueden ser presentados en la figura X y Y. 
 
@@ -69,7 +81,7 @@ Ahora, de estos datos puede ver los porcentajes.
 
 
 
-![alt text](imagens/BoxPlot_-_Before.png)
+
 
 
 
