@@ -84,3 +84,11 @@ Uma vez identificados os outliers é necessários removê-los e completar o espa
 Uma vez que os dados foram devidamente tratados é necessária realizar a modelagem dos dados. Para isso foi utilizado arbitrariamente a modelagem Arima, um modelo utilizado para modelagem de dados periódicos. Como a intenção do trabalho é prever a demanda da UC, estes dados foram divididos em dois grupos: dados de treino e dados de teste, mostrados abaixo.
 
 ![alt text](imagens/TestTrain_-_DemandaRegFP.png)
+
+# Evaluation
+
+Aplicando a modelagem Arima sobre esta variável obtém-se o resultado mostrado abaixo. Pode-se observar que o modelo obtido se ajusta aos dados dentro de uma margem de erro, o que mostra que é de fato possível utilizar o Arima para prever a demanda da UC estudada. Deve-se estipular uma margem de erro adequada para realizar contratações acertivas, evitando contratar menos do que o necessário, o que pode resultar em falta de abasteceimento. No mercado de energia, o excedente não é tão problemático pois pode ser revendido ao preço do PLH(PRECISA REVER ESSA SIGLA - NÃO SEI QUAL É O CERTO KKKK.)
+
+# Deploiment
+
+A base de dados resultante da análise realizada se encontra disponível neste repositório (data/UFRJ_-_Final.xlsx). A partir dos resultados obtidos é possível concluir que a base de dados disponível, isto é, três anos de faturas, juntamente com o tratamento de dados realizado é suficiente para prever a demanda total da UC. Com uma base de dados maior e mais completa é possível realizar previsões ainda mais acertivas. 
