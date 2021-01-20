@@ -59,6 +59,7 @@ Pode ser observado que o campo ICMS não possui nenhum dado, o que é esperado p
 
 ![alt text](imagens/DataFrameColumns_-_Before.png)
 
+### Imputações
 Buscando um banco de dados uniforme e melhor condicionado, pode-se empregar algum técnica para criar artificialmente o valor faltante da varável PERÍODO. Para este trabalho optou-se arbitrariamente em ustilizar a técnica de Imputação pela Moda. Diversas técnicas de imputação estão presentes na literatura, como imputação pela média e imputação quadrática. Contudo, como o PERÍODO é medido em dias, ou seja, é um número inteiro, a imputação pela moda se mostra mais adequada, não tendo risco de que a imputação ocorra a partir de um valor não inteiro. Abaixo é mostrado o resultado da aplicação da imputação pela moda na variável PERÍODO.
 
 ![alt text](imagens/Period_-_Imputation.png)
@@ -67,13 +68,19 @@ Após a remoção dos dados nulos o banco de dados fica completo, como pode ser 
 
 ![alt text](imagens/MissingDataMatrix_-_After.png)
 
-
+### Remoção de Outliers
 Outro aspecto importante é a identificação de dados com comportamento atípico, chamados outliers, que podem  ser observados nos dados. Por exemplo, o pico presente na variável REAT_KVAR_PONTA distoa muito do restante dos dados, possivelmente devido a um erro de digitalização. Uma forma simples de identificação de outliers são os chamados Box Plot, que mostram a média do valor apresentado juntamente com a margem de erro estipulada. Qualquer valor fora dessa margem de ero é chamado de outlier. Abaixo são apresentados os Box Plot de todas as variáveis estudadas
 
 ![alt text](imagens/BoxPlot_-_Before.png)
 
-Uma vez identificados os outliers é necessários removê-los e completar o espaço deixado com alguma técnica. Neste trabalho optou-se arbitrariamente por utilizar a técnica interquartile Range para remover e subtituir os outliers. Após a substituição destes dados as variáveis podem ser observadas abaixo. É também mostrado o Box Plot após a remoção dos outliers. Alguns campos como PIS/PASEP e COFINS foram verificados nas leis e estão corretos, apesar de serem identificados pelo Box Plot ocmo outliers. Portanto, nenhuma alteração foi realizada sobre estes valores. A DEMANDA CONTRADA também apresenta outliers, porém de fato houve uma redução no valor da demanda contraa nos três meses finais de 2019 e portanto estes dados não foram alterados.
+Uma vez identificados os outliers é necessários removê-los e completar o espaço deixado com alguma técnica. Neste trabalho optou-se arbitrariamente por utilizar a técnica interquartile Range para remover e subtituir os outliers. Após a substituição destes dados as variáveis podem ser observadas abaixo. É também mostrado o Box Plot após a remoção dos outliers. Alguns campos como PIS/PASEP e COFINS foram verificados nas leis e estão corretos, apesar de serem identificados pelo Box Plot ocmo outliers. Portanto, nenhuma alteração foi realizada sobre estes valores. A DEMANDA CONTRADA também apresenta outliers, porém de fato houve uma redução no valor da demanda contrada nos três meses finais de 2019 e portanto estes dados não foram alterados.
 
 ![alt text](imagens/DataFrameColumns_-_Outliers.png)
 
 ![alt text](imagens/BoxPlot_-_Outliers.png)
+
+# Modeling
+
+Uma vez que os dados foram devidamente tratados é necessária realizar a modelagem dos dados. Para isso foi utilizado arbitrariamente a modelagem Arima, um modelo utilizado para modelagem de dados periódicos. Como a intenção do trabalho é prever a demanda da UC, estes dados foram divididos em dois grupos: dados de treino e dados de teste, mostrados abaixo.
+
+![alt text](imagens/TestTrain_-_DemandaRegFP.png)
