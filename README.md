@@ -55,38 +55,10 @@ Como têm-se dados dos anos de 2017, 2018 e 2019 espera-se que cada campo tenha 
 
 ![alt text](imagens/MissingDataMatrix_-_Before.png)
 
-Pode ser observado que o campo ICMS não possui nenhum dado, o que é esperado pois a UC estudada é isenta de pagar tal imposto. Os campos relacionados a bandeiras tarifárias apresentam elevado número de dados faltantes e isso pdoe ser justificado devido à natureza da aplicação das bandeiras tarifária. Além disso, não há correlação entre as bandeiras tarifárias pois essas se excluem mutuamente, isto é, apenas uma bandeira tarifária pode ser aplicada sobre o consumo por vez. Os demais campos não possuem dados pois estes dados não estão disponíveis nas faturas. 
+Pode ser observado que o campo ICMS não possui nenhum dado, o que é esperado pois a UC estudada é isenta de pagar tal imposto. Os campos relacionados a bandeiras tarifárias apresentam elevado número de dados faltantes e isso pdoe ser justificado devido à natureza da aplicação das bandeiras tarifária. Além disso, não há correlação entre as bandeiras tarifárias pois essas se excluem mutuamente, isto é, apenas uma bandeira tarifária pode ser aplicada sobre o consumo por vez. Os demais campos não possuem dados pois estes dados não estão disponíveis nas faturas. Para este trabalho optou-se arbitrariamente por selecionar apenas os campos que possuem mais de 50% de dados disponíveis, isto é, apenas a variável PERÍODO. Abaixo podem ser observados o comportamento individual de cada variável estudada.
 
+![alt text](imagens/DataFrameColumns_-_Before.png)
 
-A partir dos dados disponíveis
+Buscando um banco de dados uniforme e melhor condicionado, pode-se empregar algum técnica para criar artificialmente o valor faltante da varável PERÍODO. Para este trabalho optou-se arbitrariamente em ustilizar a técnica de Imputação pela Moda. Diversas técnicas de imputação estão presentes na literatura, como imputação pela média e imputação quadrática. Contudo, como o PERÍODO é medido em dias, ou seja, é um número inteiro, a imputação pela moda se mostra mais adequada, não tendo risco de que a imputação ocorra a partir de um valor não inteiro. Abaixo é mostrado o resultado da aplicação da imputação pela moda na variável PERÍODO.
 
-A partir de los datos 2017-2019 que tenemos disponibles, las facturas fueron disponibles pudiendose observado en la tabla X. Sin embargo, en la tabla existe datos no especificados NoN. Ese datos no es legible para nuestra herramienta de trabajo Python. Este tuvo que ser sustituido por un valor cero. Aquellos datos nulos pueden ser presentados en la figura X y Y. 
-
-Las figuras X y Y (matriz) representa los datos nulos representados por periodos A y B respectivamente.
-
-
-METODOLOGIA DE REMOVER LOS DATOS NULOS
-Se removera con datos menores a 50%.
-Se tendra que remover los datos nulos ya que no representan porque no dan una buena descripcion del problema.
-Los datos que estan faltando, utilizara los datos que tienen mas de 50%. 
-Fue utilzado el reemplazo de datos por imputacion por la moda.
-
-Ahora se puede observar que la matriz se encuentra completa.
-
-Comportamiento de los datos.
-Puede se observar algunos picos en los graficos. Esa demanda tiene un sobrepico. y son conocidos por Outlier.
-
-Para identificar Outlflyier, Botplot para mostrar fuera de esos valores
-
- 
-
-Ahora, de estos datos puede ver los porcentajes.
-
-
-
-
-
-
-
-
-
+![alt text](imagens/Period_-_Imputation.png)
