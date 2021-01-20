@@ -44,11 +44,11 @@ Neste estudo, as categorias ENERGIA HFP VERDE, ENERGIA HP VERDE, ENERGIA HFP AMA
 # Data Preparation
 As faturas de energia elétrica disponíveis foram digitalizadas em uma planilha eletrônica, cujos campos são mostrados abaixo.
 
-![alt text](imagens/MissingDataBarPlot-_Before.png)
+![alt text](imagens/MissingDataBarPlot_-_Before.png)
 
 Como têm-se dados dos anos de 2017, 2018 e 2019 espera-se que cada campo tenha um total de 36 valores. Pode ser observado que isso não é verdade para todos os campos disponíveis. Para se ter uma melhor noção dos dados faltantes é mostrado abaixo uma matriz de dados faltantes abxio, de onde pode ser observado que se há algum padrão ou algum tip ode correlção entre as variáveis faltantas.
 
-![alt text](imagens/MissingDataMatrix-_Before.png)
+![alt text](imagens/MissingDataMatrix_-_Before.png)
 
 Pode ser observado que o campo ICMS não possui nenhum dado, o que é esperado pois a UC estudada é isenta de pagar tal imposto. Os campos relacionados a bandeiras tarifárias apresentam elevado número de dados faltantes e isso pdoe ser justificado devido à natureza da aplicação das bandeiras tarifária. Além disso, não há correlação entre as bandeiras tarifárias pois essas se excluem mutuamente, isto é, apenas uma bandeira tarifária pode ser aplicada sobre o consumo por vez. Os demais campos não possuem dados pois estes dados não estão disponíveis nas faturas. 
 
