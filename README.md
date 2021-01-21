@@ -14,9 +14,9 @@ A comercialização de energia no Brasil é realizada em duas esferas de mercado
 – Quadro comparativo de contratação.
 Fonte: CCEE, 2020. https://www.ccee.org.br/portal 
 
-| ![alt text](imagens/Figura1.png)              |
+| ![alt text](imagens/Figura1.png) |
 | --- |
-| Figura 1 – Quadro comparativo de contratação. |
+|                Figura 1 – Quadro comparativo de contratação. |
 
 
 A CCEE faz a gestão dos ambientes de comercialização de energia elétrica, registrando contratos firmados entre geradores, comercializadores, distribuidores e consumidores livres. O painel Geração centraliza as principais informações sobre a geração de energia elétrica no SIN (Sistema Interligado Nacional), onde apresentam dados contabilizados referentes aos últimos 5 anos sobre a geração das usinas em operação comercial, capacidade instalada, garantia física apurada e fator de ajuste do MRE, entre outras variáveis.  
