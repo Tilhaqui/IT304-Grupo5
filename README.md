@@ -194,7 +194,7 @@ No site do CCEE foi possível coletar os dados para o PLD Mensal, de janeiro de 
  
 Contudo, observando os valores das duas estimativas de contrato, Cativo e Livre, comparando os dois preços praticados no MLE, R$182.700,65 e R$264.421,60, com o preço do consumo atual de aproximadamente R$604.492,11, temos que a diferença entre a maior tarifa média seria de R$ 337.070,52 representando 56%. Por outro lado, temos que a diferença entre a menor tarifa média encontrada seria ainda maior de R$ 418.791,46 representando 70% de economia estimada. Portanto, uma redução poderia ser entre 56% e 70%.
 
-Em outra análise, poderá ser feita considerando os valores reais máximos e mínimos registrados nos consumos do CT/UFRJ, respectivamente, 843,5 MWh, em 2018 e 1529,4 MWh em 2017. Assim, como pode ser visto na tabela 08:  
+Em outra análise, poderá ser feita considerando os valores reais máximos e mínimos registrados nos consumos do CT/UFRJ, respectivamente, 843,5 MWh, em 2018 e 1529,4 MWh em 2017. Assim, como pode ser visto na tabela 8:  
 
 | ![alt text](imagens/Tabela8.png) |
 | :---: |
