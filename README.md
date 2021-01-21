@@ -158,7 +158,7 @@ Aplicando a modelagem Arima sobre esta variável, obtém-se o resultado mostrado
 
 # Deploiment
 
-A base de dados resultante da análise realizada se encontra disponível neste repositório (data/UFRJ_-_Final.xlsx). A partir dos resultados obtidos é possível concluir que a base de dados disponível, isto é, três anos de faturas, juntamente com o tratamento de dados realizado é suficiente para prever a demanda total da UC. Com uma base de dados maior e mais completa é possível realizar previsões ainda mais acertivas.
+A base de dados resultante da análise realizada se encontra disponível neste repositório **(data/UFRJ-Final.xlsx)**. A partir dos resultados obtidos é possível concluir que a base de dados disponível, isto é, três anos de faturas, juntamente com o tratamento de dados realizado é suficiente para prever a demanda total da UC. Com uma base de dados maior e mais completa é possível realizar previsões ainda mais acertivas.
 
 # Análise de viabilidade econômica da migração 
 
