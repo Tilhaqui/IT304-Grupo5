@@ -49,7 +49,8 @@ A tabela 3 apresenta uma comparação entre os consumos de energia registrados, 
 | :---: |
 | Tabela 3 – Consumos médios, mínimo e máximo |
 
-Após a avaliação do consumo de energia do CT, para concluir a estimativa de economia de energia foi preciso analisar dos pontos. A primeira análise do valor vigente das tarifas em do mercado cativo. E o segundo ponto um estudo das médias simples do Preço de Liquidação das Diferenças (PLD).
+Após a avaliação do consumo de energia do CT, para concluir a estimativa de economia de energia foi preciso analisar dos pontos. A primeira análise do valor vigente das tarifas em do mercado cativo. E o segundo ponto um estudo das médias simples do Preço de Liquidação das Diferenças (PLD). 	
+
 Logo, a composição da tarifa, na tabela 04, de acordo com a Resolução ANEEL Nº 2.667 de 13/03/2020 com vigência a partir de 15/03/2020. 
 
 | ![alt text](imagens/Tabela4.png) |
