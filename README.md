@@ -186,7 +186,7 @@ No site do CCEE foi possível coletar os dados para o PLD Mensal, de janeiro de 
 | ![alt text](imagens/Tabela6.png) |
 | :---: |
 | Tabela 6 – Estimativa de preço do consumo de energia no mercado cativo | 	
-(*)* tarifa Light (TUSD + TE)
+(*) tarifa Light (TUSD + TE)
  
 | ![alt text](imagens/Tabela7.png) |
 | :---: |
