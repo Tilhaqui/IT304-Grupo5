@@ -196,7 +196,9 @@ Contudo, observando os valores das duas estimativas de contrato, Cativo e Livre,
 
 Em outra análise, poderá ser feita considerando os valores reais máximos e mínimos registrados nos consumos do CT/UFRJ, respectivamente, 843,5 MWh, em 2018 e 1529,4 MWh em 2017. Assim, como pode ser visto na tabela 08:  
 
-[inserir Tabela 08]  
+| ![alt text](imagens/Tabel87.png) |
+| :---: |
+| Tabela 8 – Estimativa de preços sobre o consumo mínimo e máximo registrado. | 
 
 # Conclusão  
 
