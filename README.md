@@ -4,7 +4,7 @@
 # UFRJ - Centro de Tecnologia/CT
 ## Grupo 5
 * Douglas Machado Côrtes RA: 233270
-* Hever Alcahuaman Villanueva RA: 228105}
+* Hever Alcahuaman Villanueva RA: 228105
 * Luís Henrique Bandória RA: 156449
 * Roberto Tilhaqui Junior RA: 233671
 
@@ -18,7 +18,7 @@ A comercialização de energia no Brasil é realizada em duas esferas de mercado
 
 
 A CCEE faz a gestão dos ambientes de comercialização de energia elétrica, registrando contratos firmados entre geradores, comercializadores, distribuidores e consumidores livres. O painel Geração centraliza as principais informações sobre a geração de energia elétrica no SIN (Sistema Interligado Nacional), onde apresentam dados contabilizados referentes aos últimos 5 anos sobre a geração das usinas em operação comercial, capacidade instalada, garantia física apurada e fator de ajuste do MRE, entre outras variáveis.  
-Em 16/12/2019 o Ministério de Minas e Energia (MME) publicou a Portaria nº 465/2019 que estabelece os prazos de início dos novos limites de migração de consumidores de energia elétrica para o Ambiente de Contratação Livre ACL. O novo texto abre a possibilidade de migração ao ACL “a partir de 1 º de janeiro de 2021 para os consumidores com carga igual ou superior a 1.500 kW. O Centro de Tecnologia(CT) da Universidade Federal do Rio de Janeiro (UFRJ) está no mercado cativo, onde a distribuição de energia é através da concessionária LIGHT Serviços de Eletricidade S/A. O CT está localizado na cidade do Rio de Janeiro, no campus da Cidade Universitária da Ilha do Fundão. A modalidade tarifária é THS Verde A4, classe Poder Público Federal.
+Em 16/12/2019 o Ministério de Minas e Energia (MME) publicou a Portaria nº 465/2019 que estabelece os prazos de início dos novos limites de migração de consumidores de energia elétrica para o Ambiente de Contratação Livre ACL. O novo texto abre a possibilidade de migração ao ACL a partir de 1 º de janeiro de 2021 para os consumidores com carga igual ou superior a 1.500 kW. O Centro de Tecnologia(CT) da Universidade Federal do Rio de Janeiro (UFRJ) está no mercado cativo, onde a distribuição de energia é através da concessionária LIGHT Serviços de Eletricidade S/A. O CT está localizado na cidade do Rio de Janeiro, no campus da Cidade Universitária da Ilha do Fundão. A modalidade tarifária é THS Verde A4, classe Poder Público Federal.
 
 ## Estudo de caso do CT/UFRJ
 
@@ -26,12 +26,12 @@ Atualmente, a demanda contratada é de 4913 kW, sendo assim possível realizar a
 * **(i)** análise dos contratos vigentes do CT e do perfil de consumo da comunidade acadêmica destes prédios, e estudo de viabilidade econômica da migração; 
 * **(ii)** iniciar o processo de adesão; 
 * **(iii)** comprar energia para entrar no mercado livre;
-* **(iv)** ajustar o sistema de medição (sistema de Medição para Faturamento - SMF e sistema de telemetria); 
+* **(iv)** ajustar o sistema de medição (Sistema de Medição para Faturamento - SMF e Sistema de Telemetria); 
 * **(v)** monitoramento e gestão do mercado; 
-* **(vi)** e participação na CCEE, com recomendação de que os consumidores de menor porte sejam representados por comercializadores varejistas.
+* **(vi)** participação na CCEE, com recomendação de que os consumidores de menor porte sejam representados por comercializadores varejistas.
  
 # Objetivos
-Este trabalho tem como objetivo realizar diferentes análises para determinar a possibilidade de migração de um contrato de energia elétrica do Ambiente de Contratação Regulada para o Ambiente de Contratação Livre (ACR/ACL) como medida econômica. Esta análise está limitada unidade consumidora (Centro Tecnológico - UFRJ) descrita na primeira parte deste trabalho.
+Este trabalho tem como objetivo realizar diferentes análises para determinar a possibilidade de migração de um contrato de energia elétrica do Ambiente de Contratação Regulada para o Ambiente de Contratação Livre (ACR/ACL) como medida econômica. Esta análise está limitada à unidade consumidora (Centro Tecnológico - UFRJ), descrita na primeira parte deste trabalho.
 
 # Metodologia
 Para conseguir prever a demanda de um mês futuro a partir dos dados disponíveis é necessário que a base de dados seja tratada. Remoção de dados nulos, remoção de outliers, imputação de dados faltantes são alguns dos pontos que podem ser analisados no banco de dados. Neste sentido, optou-se arbitrariamente por aplicar a metodologia `CRISP-DM (Cross-Industry Standard Process for Data Mining)` para a análise dos dados. Segundo esta metodologia, o problema deve ser dividido nas seguintes etapas:
