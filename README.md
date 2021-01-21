@@ -33,8 +33,9 @@ Atualmente, a demanda contratada é de 4913 kW, sendo assim possível realizar a
 
 Neste trabalho, foi realizado a análise do consumo de energia e foi possível obter informações para subsidiar a tomada de decisão para a migração. Foi possível ratificar que vale a pena migrar para o MLE como consumidor livre. A análise do consumo de energia elétrica dos últimos três anos – 2017, 2018 e 2019 (36 registros) apresentou os seguintes resultados:  
 
- [inserir Tabela 01]  
- Fonte: Autores
+| ![alt text](imagens/Tabela1.png) |
+| :---: |
+| Tabela 1 – Consumo anual e o valor total das faturas |
  
 A tabela 02 apresenta a caracterização do consumo de energia ativa, na Ponta e Fora de Ponta, além das médias mensais e a média geral dos três anos. O consumo da potência reativa foi analisada na primeira parte deste trabalho. Logo, com base na média dos consumos de Ponta e Fora de Ponta, foram feitos o estudo de viabilidade econômica de migração. O consumo de energia ativa médio na ponta foi de 100,2 MWh e o fora de ponta foi 1.098,2 MWh.
 
