@@ -207,3 +207,19 @@ O gerenciamento do risco é de extrema importância, inclusiva a capacitação e
 Além disso, deverá ser considerada a Taxa de Adesão (Emolumento) R$ 5.898,00, o ajuste do Sistema de Medição e a subestação estimado entre R$20.000,00 a R$50.000,00, o custo da taxa de contribuição associativa sobre os MWh comercializados, atualmente no valor de R$ 0,096 R$/MWh mensal, entre R$80,98 e R$146,82.
 Quanto aos riscos de se realizar a migração, o principal deles está ligado a um possível não pagamento de conta. Diferente do contrato de fornecimento com a Light, o não pagamento de uma fatura representa, em um primeiro momento, a cobrança de uma conta com preço variável, que pode ser maior que o valor contrato, e no segundo momento o corte da energia. Ademais, havendo o desejo de se retomar o contrato junto a concessionária, este não poderia ser feito de imediato. A concessionária, por lei, tem até cinco anos para aceitar um consumidor de volta. Um segundo risco está relacionado ao histórico de inadimplência da UFRJ, pois as empresas que vendem energia ficam receosas em celebrar contratos com a UFRJ.  
 Porém, existem alternativas para reduzir o impacto dos riscos elencados. Como, por exemplo, utilizar recursos transferidos, através do Decreto Estadual (RJ) N°43.903/2012 para o Fundo Verde como garantidor de pagamento. Dessa forma, durante um período determinado, o Fundo Verde poderia contingenciar um determinado recurso e assim dar segurança ao mercado para fornecer energia a UFRJ.
+
+# Referências Bibliográficas
+
+[1] BRASIL. Lei N 13.360, de 17 de Novembro de 2016, Altera a Lei no 9.074, de 7 de julho de 1995, dentre outras. Diário Oficial da República Federativa do Brasil, Brasília, DF, 2016.
+
+[2] Cartilha Mercado Livre de Energia Elétrica um guia básico para consumidores potencialmente livres e especiais. ABRACEL, 2019. Disponível em: http://www.abraceel.com.br/archives/files/Abraceel_Cartilha_MercadoLivre_V9.pdf. Acesso em: 18 de Janeiro de 2021.
+
+[3] CCEE. Disponível em: www.ccee.org.br . Acesso em: 18 de Janeiro de 2021.
+
+[4] LIGHT. Disponível em: http://www.light.com.br/para-residencias/Sua-Conta/composicao-da-tarifa.aspx . Acesso em: 20 de Janeiro de 2021.
+
+[5] ANEEL. RESOLUÇÃO NORMATIVA N º 414. 11. ed. [S.l.]: AGÊNCIA NACIONAL DE ENERGIA ELÉTRICA, 2010.
+
+[6] JANEIRO, G. do Estado do Rio de. Decreto n ° 43903 de 24/10/2012. 2012. Accessado em 15-Dezembro-2020. Disponível em: https://www.legisweb.com.br/legislacao/?id=246363
+
+
