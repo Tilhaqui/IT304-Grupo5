@@ -58,7 +58,7 @@ Este trabalho tem como objetivo realizar diferentes análises para determinar a 
 # Metodologia
 Para conseguir prever a demanda de um mês futuro a partir dos dados disponíveis é necessário que a base de dados seja tratada. Remoção de dados nulos, remoção de outliers, imputação de dados faltantes são alguns dos pontos que podem ser analisados no banco de dados. Neste sentido, optou-se arbitrariamente por aplicar a metodologia `CRISP-DM (Cross-Industry Standard Process for Data Mining)` para a análise dos dados. Segundo esta metodologia, o problema deve ser dividido nas seguintes etapas:
 
-* **Business Understanding:** Definição dos objetivos, declaração do problema, * * pergunta de interesse.
+* **Business Understanding:** Definição dos objetivos, declaração do problema (pergunta de interesse).
 * **Data Understanding:** Utilização de nosso conhecimento para coletar os dados.
 * **Data Preparation:** Manipulação de dados para a eliminação de outliers e dados faltantes.
 * **Modeling:** Modelo ou abordagem utilizado para estudar o comportamento de nosso sistema a partir de nossos dados.
