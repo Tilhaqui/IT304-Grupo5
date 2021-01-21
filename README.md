@@ -4,7 +4,7 @@
 # UFRJ - Centro de Tecnologia/CT
 ## Grupo 5
 * Douglas Machado Côrtes RA: 233270
-* Hever Alcahuaman Villanueva RA: 228105}
+* Hever Alcahuaman Villanueva RA: 228105
 * Luís Henrique Bandória RA: 156449
 * Roberto Tilhaqui Junior RA: 233671
 
@@ -18,7 +18,7 @@ A comercialização de energia no Brasil é realizada em duas esferas de mercado
 
 
 A CCEE faz a gestão dos ambientes de comercialização de energia elétrica, registrando contratos firmados entre geradores, comercializadores, distribuidores e consumidores livres. O painel Geração centraliza as principais informações sobre a geração de energia elétrica no SIN (Sistema Interligado Nacional), onde apresentam dados contabilizados referentes aos últimos 5 anos sobre a geração das usinas em operação comercial, capacidade instalada, garantia física apurada e fator de ajuste do MRE, entre outras variáveis.  
-Em 16/12/2019 o Ministério de Minas e Energia (MME) publicou a Portaria nº 465/2019 que estabelece os prazos de início dos novos limites de migração de consumidores de energia elétrica para o Ambiente de Contratação Livre ACL. O novo texto abre a possibilidade de migração ao ACL “a partir de 1 º de janeiro de 2021 para os consumidores com carga igual ou superior a 1.500 kW. O Centro de Tecnologia(CT) da Universidade Federal do Rio de Janeiro (UFRJ) está no mercado cativo, onde a distribuição de energia é através da concessionária LIGHT Serviços de Eletricidade S/A. O CT está localizado na cidade do Rio de Janeiro, no campus da Cidade Universitária da Ilha do Fundão. A modalidade tarifária é THS Verde A4, classe Poder Público Federal.
+Em 16/12/2019 o Ministério de Minas e Energia (MME) publicou a Portaria nº 465/2019 que estabelece os prazos de início dos novos limites de migração de consumidores de energia elétrica para o Ambiente de Contratação Livre ACL. O novo texto abre a possibilidade de migração ao ACL a partir de 1 º de janeiro de 2021 para os consumidores com carga igual ou superior a 1.500 kW. O Centro de Tecnologia(CT) da Universidade Federal do Rio de Janeiro (UFRJ) está no mercado cativo, onde a distribuição de energia é através da concessionária LIGHT Serviços de Eletricidade S/A. O CT está localizado na cidade do Rio de Janeiro, no campus da Cidade Universitária da Ilha do Fundão. A modalidade tarifária é THS Verde A4, classe Poder Público Federal.
 
 ## Estudo de caso do CT/UFRJ
 
@@ -26,9 +26,9 @@ Atualmente, a demanda contratada é de 4913 kW, sendo assim possível realizar a
 * **(i)** análise dos contratos vigentes do CT e do perfil de consumo da comunidade acadêmica destes prédios, e estudo de viabilidade econômica da migração; 
 * **(ii)** iniciar o processo de adesão; 
 * **(iii)** comprar energia para entrar no mercado livre;
-* **(iv)** ajustar o sistema de medição (sistema de Medição para Faturamento - SMF e sistema de telemetria); 
+* **(iv)** ajustar o sistema de medição (Sistema de Medição para Faturamento - SMF e Sistema de Telemetria); 
 * **(v)** monitoramento e gestão do mercado; 
-* **(vi)** e participação na CCEE, com recomendação de que os consumidores de menor porte sejam representados por comercializadores varejistas.
+* **(vi)** participação na CCEE, com recomendação de que os consumidores de menor porte sejam representados por comercializadores varejistas.
  
 # Objetivos
 Este trabalho tem como objetivo realizar diferentes análises para determinar a possibilidade de migração de um contrato de energia elétrica do Ambiente de Contratação Regulada para o Ambiente de Contratação Livre (ACR/ACL) como medida econômica. Esta análise está limitada unidade consumidora (Centro Tecnológico - UFRJ) descrita na primeira parte deste trabalho.
@@ -48,22 +48,24 @@ Para conseguir prever a demanda de um mês futuro a partir dos dados disponívei
 
 * **Definição dos objetivos:** O objetivo do presente trabalho é investigar a viabilidade da migração do CT/UFRJ para o Ambiente Livre de Contratação.
 
-* **Declaração do problema:** Tratar os dados disóníveis das faturas e realizar a previsão da demanda.
+* **Declaração do problema:** Tratar os dados disponíveis das faturas e realizar a previsão da demanda.
 
 * **Perguntas de Interesse:** É possível prever, com boa precisão, a demanda que será necessária em meses futuros?
 
 ## Data Understanding
-Para todas as análises foram utilizadas as faturas mensais para os anos de 2017, 2018 e 2019. Estas faturas foram digitalizadas e estão disponíveis  em **data/Contas de energia UFRJ.xlsx.** Dessa forma, são esperados um total de 12 dados para cada categoria presente nas faturas. Como nem todas as faturas trazem dados de todas as categorias estudadas, como por exemplo as Tarifas de Ultrapassagem que são cobradas somente nos meses em que há ultrapassagem acima de 5% da demanda contratada.
-Neste estudo, as categorias ENERGIA HFP VERDE, ENERGIA HP VERDE, ENERGIA HFP AMAR, ENERGIA HP AMAR, ENERGIA HFP VERM e ENERGIA HP VERM estão presentes apenas nas faturas referentes aos meses em que as bandeiras tarifárias estão sendo aplicadas. Dessa forma, nos meses em que não há bandeira tarifária aplicada não há energia consumida sob uma dada bandeira e, consequentemente, não há acréscimos na fatura por conta de bandeiras tarifárias, e, portanto, as categorias Acrescimo Bamar, Acrescimo Bverm1 e Acrescimo Bverm2 não constarão nas faturas. Contudo, mesmo que nenhuma bandeira esteja aplicada as tarifas relacionadas a cada uma das bandeiras estão presentes em todos os meses (Esta análise é mais detalhada no estudo preliminar).
+Para todas as análises foram utilizadas as faturas mensais para os anos de 2017, 2018 e 2019. Estas faturas foram digitalizadas e estão disponíveis  em **data/Contas de energia UFRJ.xlsx.** Dessa forma, são esperados um total de 12 dados para cada categoria presente nas faturas. No entanto há faturas que não apresentam dados de todas as mencionadas categorias, como por exemplo as Tarifas de Ultrapassagem, que são cobradas somente nos meses em que há ultrapassagem acima de 5% da demanda contratada [5].
+Neste estudo, as categorias ENERGIA HFP VERDE, ENERGIA HP VERDE, ENERGIA HFP AMAR, ENERGIA HP AMAR, ENERGIA HFP VERM e ENERGIA HP VERM estão presentes apenas nas faturas referentes aos meses em que as bandeiras tarifárias estão sendo aplicadas. Dessa forma, nos meses em que não há bandeira tarifária aplicada não há energia consumida sob uma dada bandeira e, consequentemente, não há acréscimos na fatura por conta de bandeiras tarifárias, e, portanto, as categorias Acrescimo Bamar, Acrescimo Bverm1 e Acrescimo Bverm2 não constarão nas faturas. Contudo, mesmo que nenhuma bandeira esteja aplicada as tarifas relacionadas a cada uma das bandeiras estão presentes em todos os meses (esta análise é mais detalhada no estudo preliminar).
 
 ## Data Preparation
-As faturas de energia elétrica disponíveis foram digitalizadas em uma planilha eletrônica. Um pequeno trecho dessa planilha é mostrado abaixo. O primeiro passo é observar a presença dos valores NaN (not a number), valores que não são reconhecidos pela linguagem Python. Portanto é necessário realizar a remoção destes valroes dad base de dados, substituindo-os  por zeros uma vez que são dados não existentes.
+As faturas de energia elétrica disponíveis foram digitalizadas em uma planilha eletrônica. Um pequeno trecho dessa planilha é mostrado abaixo. 
+O primeiro passo é observar a presença dos valores "NaN" (not a number): valores que não são reconhecidos pela linguagem Python. Portanto, é necessário realizar a remoção destes valores da base de dados substituindo-os por "0" (zeros) uma vez que são dados inexistentes.
 
 | ![alt text](imagens/NaN.png) |
 | :---: |
 | Figura 2 – Trecho da planilha digitalizada. |
 
-Após a substituição dos dados NaN por zeros, é necessário identificar os dados nulos presentes na base de dados. Dados nulos tipicamente aparecem no banco de dados por falhas no preenchimento das planilhas ou falhas na comunicação entre os medidores e a base de dados, sendo necessário identifica-los. A figura abaixo mostra o total de dados para cada categoria da base de dados, juntamente com a porcentagem de dados nulos naqueles campos em que estes estão presentes.
+Após a substituição dos dados "NaN" por zeros, é necessário identificar os dados nulos presentes na base de dados. Dados nulos tipicamente aparecem no banco de dados por falhas no preenchimento das planilhas ou falhas na comunicação entre os medidores e a base de dados, sendo necessário identificá-los. 
+A figura abaixo mostra o total de dados para cada categoria da base de dados, juntamente com a porcentagem de dados nulos naqueles campos em que estes estão presentes.
 
 | ![alt text](imagens/MissingDataBarPlot_-_Before.png) |
 | :---: |
@@ -73,21 +75,21 @@ Após a substituição dos dados NaN por zeros, é necessário identificar os da
 | :---: |
 | Figura 4 – Representação percentual dos dados faltantes. |
 
-Como têm-se dados dos anos de 2017, 2018 e 2019 espera-se que cada campo tenha um total de 36 valores. Pode ser observado que isso não é verdade para todos os campos disponíveis. Para se ter uma melhor noção dos dados faltantes é mostrado abaixo uma matriz de dados faltantes abxio, de onde pode ser observado que se há algum padrão ou algum tip ode correlção entre as variáveis faltantas.
+Como têm-se dados dos anos de 2017, 2018 e 2019, espera-se que cada campo tenha um total de 36 valores. Pode ser observado que isso não é verdade para todos os campos disponíveis. Para se ter uma melhor noção dos dados faltantes, é mostrado abaixo uma matriz de dados faltantes de onde pode ser visto que se há algum padrão ou algum tipo de correlação entre as variáveis faltantes.
 
 | ![alt text](imagens/MissingDataMatrix_-_Before.png) |
 | :---: |
 | Figura 5 – Matriz de dados faltantes. |
 
 
-Pode ser observado que o campo ICMS não possui nenhum dado, o que é esperado pois a UC estudada é isenta de pagar tal imposto. Os campos relacionados a bandeiras tarifárias apresentam elevado número de dados faltantes e isso pdoe ser justificado devido à natureza da aplicação das bandeiras tarifária. Além disso, não há correlação entre as bandeiras tarifárias pois essas se excluem mutuamente, isto é, apenas uma bandeira tarifária pode ser aplicada sobre o consumo por vez. Os demais campos não possuem dados pois estes dados não estão disponíveis nas faturas. Para este trabalho optou-se arbitrariamente por selecionar apenas os campos que possuem mais de 50% de dados disponíveis, isto é, apenas a variável PERÍODO. Abaixo podem ser observados o comportamento individual de cada variável estudada.
+Pode ser observado que o campo ICMS não possui nenhum dado, o que já é esperado já que a UC estudada é isenta do pagamento deste tributo segundo o decreto nº43903 de 24/10/2012 do estado do Rio de Janeiro [6]. Os campos relacionados às bandeiras tarifárias apresentam um elevado número de dados faltantes, onde isso pode ser justificado devido à natureza da aplicação das bandeiras tarifárias. Além disso, não há correlação entre as bandeiras tarifárias, pois apenas uma bandeira tarifária pode ser aplicada sobre o consumo por vez. Os demais campos não possuem dados já que não estão disponíveis nas faturas de energia elétrica. Para este trabalho optou-se arbitrariamente por selecionar apenas os campos que possuem mais de 50% de dados disponíveis, ou seja, apenas a variável PERÍODO. Abaixo pode ser observado o comportamento individual de cada variável estudada.
 
 | ![alt text](imagens/DataFrameColumns_-_Before.png) |
 | :---: |
 | Figura 6 – Variáveis analisadas - Sem tratamento. |
 
 ### Imputações
-Buscando um banco de dados uniforme e melhor condicionado, pode-se empregar algum técnica para criar artificialmente o valor faltante da varável PERÍODO. Para este trabalho optou-se arbitrariamente em ustilizar a técnica de Imputação pela Moda. Diversas técnicas de imputação estão presentes na literatura, como imputação pela média e imputação quadrática. Contudo, como o PERÍODO é medido em dias, ou seja, é um número inteiro, a imputação pela moda se mostra mais adequada, não tendo risco de que a imputação ocorra a partir de um valor não inteiro. Abaixo é mostrado o resultado da aplicação da imputação pela moda na variável PERÍODO.
+Buscando um banco de dados uniforme e melhor condicionado, pode-se empregar algum técnica para criar artificialmente o valor faltante da varável PERÍODO. Para este trabalho optou-se arbitrariamente em utilizar a técnica de Imputação pela Moda. Diversas técnicas de imputação estão presentes na literatura, como imputação pela média e imputação quadrática. Contudo, como o PERÍODO é medido em dias, o que representa um número inteiro, a imputação pela moda se mostra mais adequada não tendo risco de que a imputação ocorra a partir de um valor não-inteiro. Abaixo é mostrado o resultado da aplicação da imputação pela moda na variável PERÍODO.
 
 | ![alt text](imagens/Period_-_Imputation.png) |
 | :---: |
