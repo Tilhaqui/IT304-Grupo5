@@ -15,6 +15,7 @@ A comercialização de energia no Brasil é realizada em duas esferas de mercado
 Fonte: CCEE, 2020. https://www.ccee.org.br/portal 
 
 | ![alt text](imagens/Figura1.png)              |
+| --- |
 | Figura 1 – Quadro comparativo de contratação. |
 
 
