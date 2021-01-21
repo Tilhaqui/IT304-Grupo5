@@ -220,6 +220,4 @@ Porém, existem alternativas para reduzir o impacto dos riscos elencados. Como, 
 
 [5] ANEEL. RESOLUÇÃO NORMATIVA N º 414. 11. ed. [S.l.]: AGÊNCIA NACIONAL DE ENERGIA ELÉTRICA, 2010.
 
-[6] JANEIRO, G. do Estado do Rio de. Decreto n ° 43903 de 24/10/2012. 2012. Accessado em 15-Dezembro-2020. Disponível em: https://www.legisweb.com.br/legislacao/?id=246363
-
-
+[6] JANEIRO, G. do Estado do Rio de. Decreto n ° 43903 de 24/10/2012. 2012. Accesso em: 15 de Dezembro de 2020. Disponível em: https://www.legisweb.com.br/legislacao/?id=246363
