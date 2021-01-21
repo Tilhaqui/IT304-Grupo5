@@ -19,6 +19,7 @@ A comercialização de energia no Brasil é realizada em duas esferas de mercado
 
 A CCEE faz a gestão dos ambientes de comercialização de energia elétrica, registrando contratos firmados entre geradores, comercializadores, distribuidores e consumidores livres. O painel Geração centraliza as principais informações sobre a geração de energia elétrica no SIN (Sistema Interligado Nacional), onde apresentam dados contabilizados referentes aos últimos 5 anos sobre a geração das usinas em operação comercial, capacidade instalada, garantia física apurada e fator de ajuste do MRE, entre outras variáveis.  
 Em 16/12/2019 o Ministério de Minas e Energia (MME) publicou a Portaria nº 465/2019 que estabelece os prazos de início dos novos limites de migração de consumidores de energia elétrica para o Ambiente de Contratação Livre ACL. O novo texto abre a possibilidade de migração ao ACL "a partir de 1 º de janeiro de 2021 para os consumidores com carga igual ou superior a 1.500 kW."  
+
 O Centro de Tecnologia(CT) da Universidade Federal do Rio de Janeiro (UFRJ) está no mercado cativo, onde a distribuição de energia é através da concessionária LIGHT Serviços de Eletricidade S/A. O CT está localizado na cidade do Rio de Janeiro, no campus da Cidade Universitária da Ilha do Fundão. A modalidade tarifária é THS Verde A4, classe Poder Público Federal.
 
 ## Estudo de caso do CT/UFRJ
@@ -81,10 +82,12 @@ Para conseguir prever a demanda de um mês futuro a partir dos dados disponívei
 
 ## Data Understanding
 Para todas as análises foram utilizadas as faturas mensais para os anos de 2017, 2018 e 2019. Estas faturas foram digitalizadas e estão disponíveis  em **data/Contas de energia UFRJ.xlsx.** Dessa forma, são esperados um total de 12 dados para cada categoria presente nas faturas. No entanto há faturas que não apresentam dados de todas as mencionadas categorias, como por exemplo as Tarifas de Ultrapassagem, que são cobradas somente nos meses em que há ultrapassagem acima de 5% da demanda contratada [5].
+
 Neste estudo, as categorias ENERGIA HFP VERDE, ENERGIA HP VERDE, ENERGIA HFP AMAR, ENERGIA HP AMAR, ENERGIA HFP VERM e ENERGIA HP VERM estão presentes apenas nas faturas referentes aos meses em que as bandeiras tarifárias estão sendo aplicadas. Dessa forma, nos meses em que não há bandeira tarifária aplicada não há energia consumida sob uma dada bandeira e, consequentemente, não há acréscimos na fatura por conta de bandeiras tarifárias, e, portanto, as categorias Acrescimo Bamar, Acrescimo Bverm1 e Acrescimo Bverm2 não constarão nas faturas. Contudo, mesmo que nenhuma bandeira esteja aplicada as tarifas relacionadas a cada uma das bandeiras estão presentes em todos os meses (esta análise é mais detalhada no estudo preliminar).
 
 ## Data Preparation
 As faturas de energia elétrica disponíveis foram digitalizadas em uma planilha eletrônica. Um pequeno trecho dessa planilha é mostrado abaixo. 
+
 O primeiro passo é observar a presença dos valores "NaN" (not a number): valores que não são reconhecidos pela linguagem Python. Portanto, é necessário realizar a remoção destes valores da base de dados substituindo-os por "0" (zeros) uma vez que são dados inexistentes.
 
 | ![alt text](imagens/NaN.png) |
@@ -92,6 +95,7 @@ O primeiro passo é observar a presença dos valores "NaN" (not a number): valor
 | Figura 2 – Trecho da planilha digitalizada. |
 
 Após a substituição dos dados "NaN" por zeros, é necessário identificar os dados nulos presentes na base de dados. Dados nulos tipicamente aparecem no banco de dados por falhas no preenchimento das planilhas ou falhas na comunicação entre os medidores e a base de dados, sendo necessário identificá-los. 
+
 A figura abaixo mostra o total de dados para cada categoria da base de dados, juntamente com a porcentagem de dados nulos naqueles campos em que estes estão presentes.
 
 | ![alt text](imagens/MissingDataBarPlot_-_Before.png) |
@@ -168,17 +172,28 @@ A base de dados resultante da análise realizada se encontra disponível neste r
 # Análise de viabilidade econômica da migração 
 
 O cálculo da Média Mensal é feita considerando a média simples do PLD de todas as horas do mês e para cada submercado do Sistema Elétrico Brasileiro, divididos atualmente em quatro submercados: Norte, Nordeste, Sudeste/Centro-Oeste e Sul. Para o período anterior a 1° de janeiro de 2021, a média mensal do PLD considerava os valores do PLD semanal por patamar de carga - leve, médio e pesado - ponderado pelo número de horas de cada patamar e em cada semana do mês, com base na metodologia que era vigente do cálculo do PLD (CCEE, 2020).  
-	A partir de 1° de janeiro de 2021, o PLD passou a ser calculado por submercado em base horária, de modo que a média mensal consiste na média simples de todas as horas do referido mês, e cuja informação se torna disponível apenas após a divulgação dos resultados do processamento do modelo DESSEM realizados no penúltimo dia do mês, referente aos valores de PLD para cada hora da último dia do mês em questão. Este modelo foi proposto pela Comissão Permanente para Análise de Metodologias e Programas Computacionais do Setor Elétrico (CPAMP) com cronograma de implantação definido pela Portaria MME 301/2019 (CCEE, 2020).  
-	No site do CCEE foi possível coletar os dados para o PLD Mensal, de janeiro de 2018 à dezembro de 2020 e o PLD Semanal, janeiro de 2019 à janeiro de 2021. Entretanto, para este estudo foi considerado o período de janeiro de 2019 à dezembro de 2020 para ambos PLD’s, com o objetivo de obter os cálculos médios das tarifas dos submercados para e estimativa financeira. É possível ver as comparações na tabela 05. A análise de dados observou variações nos PLD Mensal entre R$39,68 e R$ 505,18.  
- [inserir Tabela 05]  
+
+A partir de 1° de janeiro de 2021, o PLD passou a ser calculado por submercado em base horária, de modo que a média mensal consiste na média simples de todas as horas do referido mês, e cuja informação se torna disponível apenas após a divulgação dos resultados do processamento do modelo DESSEM realizados no penúltimo dia do mês, referente aos valores de PLD para cada hora da último dia do mês em questão. Este modelo foi proposto pela Comissão Permanente para Análise de Metodologias e Programas Computacionais do Setor Elétrico (CPAMP) com cronograma de implantação definido pela Portaria MME 301/2019 (CCEE, 2020).  
+
+No site do CCEE foi possível coletar os dados para o PLD Mensal, de janeiro de 2018 à dezembro de 2020 e o PLD Semanal, janeiro de 2019 à janeiro de 2021. Entretanto, para este estudo foi considerado o período de janeiro de 2019 à dezembro de 2020 para ambos PLD’s, com o objetivo de obter os cálculos médios das tarifas dos submercados para e estimativa financeira. É possível ver as comparações na tabela 05. A análise de dados observou variações nos PLD Mensal entre R$39,68 e R$ 505,18.  
+
+| ![alt text](imagens/Tabela5.png) |
+| :---: |
+| Tabela 5 – PLD Médio Semanal e Mensal de 2019 e 2020 |
  
  Considerou-se os valores máximos e mínimos do PLD Médio, R$ 220,64/MWh, do submercado SUL e R$ 152,45/MWh, do submercado NORDESTE.  
  
- [inserir Tabela 06]  
+| ![alt text](imagens/Tabela6.png) |
+| :---: |
+| Tabela 6 – Estimativa de preço do consumo de energia no mercado cativo | 	
+(*)* tarifa Light (TUSD + TE)
  
- [inserir Tabela 07]  
+| ![alt text](imagens/Tabela7.png) |
+| :---: |
+| Tabela 7 – Estimativa de preço para o PLD Médio Semanal e Mensal no MLE. | 
  
 Contudo, observando os valores das duas estimativas de contrato, Cativo e Livre, comparando os dois preços praticados no MLE, R$182.700,65 e R$264.421,60, com o preço do consumo atual de aproximadamente R$604.492,11, temos que a diferença entre a maior tarifa média seria de R$ 337.070,52 representando 56%. Por outro lado, temos que a diferença entre a menor tarifa média encontrada seria ainda maior de R$ 418.791,46 representando 70% de economia estimada. Portanto, uma redução poderia ser entre 56% e 70%.
+
 Em outra análise, poderá ser feita considerando os valores reais máximos e mínimos registrados nos consumos do CT/UFRJ, respectivamente, 843,5 MWh, em 2018 e 1529,4 MWh em 2017. Assim, como pode ser visto na tabela 08:  
 
 [inserir Tabela 08]  
