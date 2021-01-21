@@ -9,7 +9,17 @@
 * Roberto
 
 # Introdução
-Hoje o mercado de energia no Brasil apresenta benefícios para os consumidores. Obtenção de nova opção de migração do mercado cativo - Ambiente de Contratação Regulada (ACR) para Ambiente de Contratação Livre (ACL). No ACL, o consumidor pode escolher livremente seu fornecedor de energia, exercendo seu direito à portabilidade da conta de luz. Nesse ambiente, o fornecedor e o consumidor negociaram as condições de contratação de energia. Porém, para conseguir a mudança na migração de ACR para ACL, diferentes análises devem ser realizadas, tais como: dados, demanda, reativos, energia, sendo avaliados nos últimos 3 anos sujeitos a um ACR. Por outro lado, também é importante realizar análises de previsões como: demanda, produção, etc. Estas últimas análises podem ser desenvolvidas aplicando diferentes metodologias. Neste trabalho, pretende-se aplicar algumas das metodologias para determinar a possibilidade de migração para o mercado de ACL. O estudo está focado na unidade Consumidora do Centro Tecnológico da Universidade Federal do Rio de Janeiro.
+
+A comercialização de energia no Brasil é realizada em duas esferas de mercado: o Ambiente de Contratação Regulada (ACR) e o Ambiente de Contratação Livre (ACL). Todos os contratos, sejam do ACR ou do ACL, têm de ser registrados na CCEE, e servem de base para a contabilização e liquidação das diferenças no mercado de curto prazo. A diferença entre os dois tipos de contração encontra-se no quadro abaixo. 
+– Quadro comparativo de contratação.
+Fonte: CCEE, 2020. https://www.ccee.org.br/portal 
+
+|![alt text](imagens/Figura1.png)|
+|Figura 1 – Quadro comparativo de contratação.|
+
+
+A CCEE faz a gestão dos ambientes de comercialização de energia elétrica, registrando contratos firmados entre geradores, comercializadores, distribuidores e consumidores livres. O painel Geração centraliza as principais informações sobre a geração de energia elétrica no SIN (Sistema Interligado Nacional), onde apresentam dados contabilizados referentes aos últimos 5 anos sobre a geração das usinas em operação comercial, capacidade instalada, garantia física apurada e fator de ajuste do MRE, entre outras variáveis.  
+Em 16/12/2019 o Ministério de Minas e Energia (MME) publicou a Portaria nº 465/2019 que estabelece os prazos de início dos novos limites de migração de consumidores de energia elétrica para o Ambiente de Contratação Livre ACL. O novo texto abre a possibilidade de migração ao ACL “a partir de 1 º de janeiro de 2021 para os consumidores com carga igual ou superior a 1.500 kW. O Centro de Tecnologia(CT) da Universidade Federal do Rio de Janeiro (UFRJ) está no mercado cativo, onde a distribuição de energia é através da concessionária LIGHT Serviços de Eletricidade S/A. O CT está localizado na cidade do Rio de Janeiro, no campus da Cidade Universitária da Ilha do Fundão. A modalidade tarifária é THS Verde A4, classe Poder Público Federal.
  
 # Objetivos
 Este trabalho tem como objetivo realizar diferentes análises para determinar a possibilidade de migração de um contrato de energia elétrica do Ambiente de Contratação Regulada para o Ambiente de Contratação Livre (ACR/ACL) como medida econômica. Esta análise está limitada unidade consumidora (Centro Tecnológico - UFRJ) descrita no capítulo anterior.
