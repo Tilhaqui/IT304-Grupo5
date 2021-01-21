@@ -37,21 +37,24 @@ Neste trabalho, foi realizado a análise do consumo de energia e foi possível o
 | :---: |
 | Tabela 1 – Consumo anual e o valor total das faturas |
  
-A tabela 02 apresenta a caracterização do consumo de energia ativa, na Ponta e Fora de Ponta, além das médias mensais e a média geral dos três anos. O consumo da potência reativa foi analisada na primeira parte deste trabalho. Logo, com base na média dos consumos de Ponta e Fora de Ponta, foram feitos o estudo de viabilidade econômica de migração. O consumo de energia ativa médio na ponta foi de 100,2 MWh e o fora de ponta foi 1.098,2 MWh.
+A tabela 2 apresenta a caracterização do consumo de energia ativa, na Ponta e Fora de Ponta, além das médias mensais e a média geral dos três anos. O consumo da potência reativa foi analisada na primeira parte deste trabalho. Logo, com base na média dos consumos de Ponta e Fora de Ponta, foram feitos o estudo de viabilidade econômica de migração. O consumo de energia ativa médio na ponta foi de 100,2 MWh e o fora de ponta foi 1.098,2 MWh.
 
-[inserir Tabela 02]
-Fonte: Autores
+| ![alt text](imagens/Tabela2.png) |
+| :---: |
+| Tabela 2 – Consumo Fora de Ponta e na Ponta |
 
 A tabela 3 apresenta uma comparação entre os consumos de energia registrados, mínimo, médio e máximo para a análise financeira e estimativa de custos. Percebe-se o consumo de energia total, de 2017 para 2019, teve uma taxa de decrescimento de 8,6%. Sendo assim, o impacto de ações de eficiência energética no prédio e mais a migração para o MLE tem uma grande possibilidade de economia financeira para UFRJ através destas medidas.
 
-[inserir Tabela 03]
-Fonte: Autores
+| ![alt text](imagens/Tabela3.png) |
+| :---: |
+| Tabela 3 – Consumos médios, mínimo e máximo |
 
 Após a avaliação do consumo de energia do CT, para concluir a estimativa de economia de energia foi preciso analisar dos pontos. A primeira análise do valor vigente das tarifas em do mercado cativo. E o segundo ponto um estudo das médias simples do Preço de Liquidação das Diferenças (PLD).
 Logo, a composição da tarifa, na tabela 04, de acordo com a Resolução ANEEL Nº 2.667 de 13/03/2020 com vigência a partir de 15/03/2020. 
 
-[inserir Tabela 04]
-Fonte: Light, 2020
+| ![alt text](imagens/Tabela4.png) |
+| :---: |
+| Tabela 4 – Composição tarifária vigente (Fonte: Light, 2020) |
  
 # Objetivos
 Este trabalho tem como objetivo realizar diferentes análises para determinar a possibilidade de migração de um contrato de energia elétrica do Ambiente de Contratação Regulada para o Ambiente de Contratação Livre (ACR/ACL) como medida econômica. Esta análise está limitada unidade consumidora (Centro Tecnológico - UFRJ) descrita na primeira parte deste trabalho.
