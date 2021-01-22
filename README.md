@@ -24,7 +24,7 @@ O Centro de Tecnologia(CT) da Universidade Federal do Rio de Janeiro (UFRJ) est�
 
 ## Estudo de caso do CT/UFRJ
 
-Atualmente, a demanda contratada é de 4913 kW, sendo assim possível realizar a migração para o Mercado Livre de Energia (MLE). Para se transferir para o sistema de livre mercado é necessário [2]: 
+O período analisado das faturas de energia elétrica foi de Janeiro de 2017 a Dezembro de 2019. Durante esse período a demanda contratada foi de 5150 kW entre Janeiro de 2017 e Setembro de 2019, e a partir de Outubro de 2019 passa a ser 4913 kW. Sendo assim, analisando ambos valores, há possibilidades de uma possível migração para o Mercado Livre de Energia (MLE). Para se transferir para o sistema de livre mercado é necessário [2]: 
 * **(i)** análise dos contratos vigentes do CT e do perfil de consumo da comunidade acadêmica destes prédios, e estudo de viabilidade econômica da migração; 
 * **(ii)** iniciar o processo de adesão; 
 * **(iii)** comprar energia para entrar no mercado livre;
